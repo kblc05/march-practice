@@ -1,3 +1,42 @@
 @charset 'UTF-8';
 /* CSS DOCUMENT */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header {
+	display: grid;
+	width: 100vw;
+	margin: auto;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	background-image: linear-gradient(315deg, rgba(152, 48, 55, 0.5), rgba(250, 30, 158, 0.5));
+}
+
+header > img {
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	width: 100%;
+	mix-blend-mode: hard-light;
+}
+
+.nav {
+	display: flex;
+	margin: auto;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	width: 100%;
+	justify-content: space-around;
+	align-content: end;
+}
